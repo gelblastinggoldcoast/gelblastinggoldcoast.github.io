@@ -1,0 +1,155 @@
+body {
+	background-color: black;
+}
+h1 {
+	color: white;
+	text-align: center;
+	font-family: arial;
+	border:3px solid red;
+	font-size: 500%;
+}
+h2 {
+	color: white;
+	text-align: center;
+	font-family: arial;
+}
+p {
+	color: white;
+	font-family: bahnschrift;
+}
+ul {
+	color: white;
+	font-family: bahnschrift;
+}
+ol {
+	color: white;
+	font-family: bahnschrift;
+}
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:visited {
+  color: crimson;
+  text-decoration: none;
+}
+a:active {
+  color: tomato;
+  text-decoration: none;
+}
+.important {
+	color: red;
+	font-weight: bold;
+}
+.topnav {
+	background-color:crimson;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.topnav a, .active{
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: Arial;
+}
+.topnav a:hover {
+	background-color: red;
+	color: white;
+	font-family: Arial;
+	text-decoration: underline;
+	animation-name: tophover;
+	animation-duration: 1s;
+}
+@keyframes changetab {
+	from {text-decoration: white underline;}
+	to {text-decoration: red underline;}
+}
+.active {
+	background-color: red;
+	color: white;
+	font-family: Arial;
+	animation-name: changetab;
+	animation-duration: 1s;
+}
+.main {
+	margin-top: 30px;
+}
+.footerleft {
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left:0
+}
+.footermiddle {
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.footerright {
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	right:0;
+}
+.tableimage {
+	text-align: center;
+	border: 2px solid red;
+}
+.tabletitle {
+	color: white;
+	text-align: center;
+	font-family: arial;
+}
+td {
+	width: 25%;
+}
+.tabletext {
+	color: white;
+	font-family: bahnschrift;
+}
+.cost {
+	color: tomato;
+	font-family: bahnschrift;
+	text-decoration: bold;
+	text-align: center;
+}
+@keyframes hover {
+	from {color: red; text-decoration: underline black;}
+	to {color: tomato; text-decoration: underline;}
+}
+a:hover.fadelink{
+	animation-name: hover;
+	animation-duration: 1s;
+	color: tomato;
+	text-decoration: underline;
+}
+@keyframes tophover {
+	from {background-color: crimson; text-decoration: crimson underline;}
+	to {background-color: red; text-decoration: white underline;}
+}
+@keyframes deactivate {
+	from {background-color: red; text-decoration: white underline;}
+	to {background-color: crimson; text-decoration: crimson underline;}
+}
+.notactive {
+	animation-name: deactivate;
+	animation-duration: 1s;
+}
+@keyframes dehover {
+	from {color: tomato; text-decoration: tomato underline;}
+	to {color: red; text-decoration: black underline;}
+}
+a.fadelink{
+	animation-name: dehover;
+	animation-duration: 1s;
+}
+.image {
+	border:5px solid red;
+	background-color: black;
+}
